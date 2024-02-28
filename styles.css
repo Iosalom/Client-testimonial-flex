@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background: rgb(8, 8, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Open sans';
+  transition: 0.3 ease-out;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+main div {
+  display: flex;
+  transition: 0.3 ease-out;
+}
+main div ul {
+  margin-right: 50px;
+  transition: 0.3 ease-out;
+}
+main div ul li {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 600px;
+  padding: 0 25px;
+
+  background: rgb(255, 255, 255);
+  margin-top: 40px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+/*  */
+main div ul li h4 {
+  font-size: 18px;
+  font-weight: 300;
+}
+main div ul li h4 p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+main div ul li div:nth-child(2) {
+  margin-left: 25px;
+}
+main div ul li div img {
+  transition: 0.3 ease-out;
+}
+main div ul li:hover {
+  margin-left: -50px;
+  background: rgb(219, 221, 221);
+  transition: 0.5s ease-in-out;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 50px;
+  color: #eee;
+  transition: 0.3 ease-out;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3 ease-out;
+}
+section div h2 {
+  line-height: 60px;
+  font-size: 44px;
+  font-weight: 400;
+}
+section div p {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 1185px) {
+  body {
+    flex-direction: column;
+  }
+  section div h2 {
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  section div p {
+    line-height: 40px;
+    font-size: 18px;
+  }
+
+  main div {
+    flex-direction: column-reverse;
+  }
+  main div ul {
+    margin-right: 0;
+  }
+  section {
+    justify-content: start;
+    align-items: start;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  section div {
+    flex-direction: column;
+    text-align: start;
+  }
+  section div h2 {
+    line-height: 50px;
+  }
+  section div p {
+    line-height: 35px;
+  }
+  main div ul li:hover {
+    margin-left: 0;
+  }
+  main div ul li:active {
+    background: rgb(219, 221, 221);
+    transition: 0.5s ease-in-out;
+  }
+  main div ul {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  main div ul li {
+    height: 125px;
+    width: 500px;
+    padding: 0 25px;
+    /*
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out; */
+  }
+  section div h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  section div p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  main div ul li h4 {
+    font-size: 16px;
+  }
+  main div ul li h4 p {
+    font-size: 14px;
+    /* margin-top: 10px; */
+  }
+}
+@media (max-width: 580px) {
+  img {
+    width: 75px;
+    height: 75px;
+  }
+  main div ul li {
+    height: 100px;
+    width: 450px;
+    padding: 0 25px;
+    /*
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out; */
+  }
+  section div h2 {
+    line-height: 40px;
+    font-size: 26px;
+  }
+  section div p {
+    line-height: 25px;
+    font-size: 12px;
+  }
+  main div ul li h4 {
+    font-size: 16px;
+  }
+  main div ul li h4 p {
+    font-size: 14px;
+    /* margin-top: 10px; */
+  }
+}
+@media (max-width: 515px) {
+  img {
+    width: 55px;
+    height: 55px;
+  }
+  main div ul li {
+    height: 100px;
+    width: 350px;
+    padding: 0 25px;
+    /*
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out; */
+    margin-top: 20px;
+  }
+  section div h2 {
+    line-height: 40px;
+    font-size: 26px;
+  }
+  section div p {
+    line-height: 24px;
+    font-size: 12px;
+  }
+  main div ul li h4 {
+    font-size: 14px;
+  }
+  main div ul li h4 p {
+    font-size: 12px;
+    /* margin-top: 10px; */
+  }
+}
+@media (max-width: 402px) {
+  img {
+    width: 55px;
+    height: 55px;
+  }
+  main div ul li {
+    height: 75px;
+    width: 280px;
+    padding: 0 25px;
+    /*
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out; */
+    margin-top: 20px;
+  }
+  section div h2 {
+    line-height: 35px;
+    font-size: 26px;
+  }
+  section div p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  main div ul li h4 {
+    font-size: 12px;
+  }
+  main div ul li h4 p {
+    font-size: 10px;
+    /* margin-top: 10px; */
+  }
+}
