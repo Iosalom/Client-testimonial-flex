@@ -45,6 +45,12 @@ main div ul li {
   border-radius: 10px;
   transition: 0.5s ease-in-out;
 }
+main div ul li div img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  transition: 0.5s ease-out;
+}
 /*  */
 main div ul li h4 {
   font-size: 18px;
@@ -58,13 +64,9 @@ main div ul li h4 p {
 main div ul li div:nth-child(2) {
   margin-left: 25px;
 }
-main div ul li div img {
-  transition: 0.3 ease-out;
-}
 main div ul li:hover {
   margin-left: -50px;
   background: rgb(219, 221, 221);
-  transition: 0.5s ease-in-out;
 }
 section {
   display: flex;
