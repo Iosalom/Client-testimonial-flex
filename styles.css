@@ -45,12 +45,6 @@ main div ul li {
   border-radius: 10px;
   transition: 0.5s ease-in-out;
 }
-main div ul li div img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  transition: 0.5s ease-out;
-}
 /*  */
 main div ul li h4 {
   font-size: 18px;
@@ -67,6 +61,7 @@ main div ul li div:nth-child(2) {
 main div ul li:hover {
   margin-left: -50px;
   background: rgb(219, 221, 221);
+  transition: 0.5s ease-in-out;
 }
 section {
   display: flex;
@@ -81,6 +76,11 @@ section div {
   display: flex;
   flex-direction: column;
   transition: 0.3 ease-out;
+}
+main div ul li div img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
 }
 section div h2 {
   line-height: 60px;
@@ -141,6 +141,11 @@ section div p {
 }
 
 @media (max-width: 680px) {
+  main div ul li div img {
+    height: 85px;
+    width: 85px;
+    border-radius: 50px;
+  }
   main div ul li {
     height: 125px;
     width: 500px;
@@ -169,8 +174,8 @@ section div p {
 }
 @media (max-width: 580px) {
   img {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
   }
   main div ul li {
     height: 100px;
@@ -200,8 +205,8 @@ section div p {
 }
 @media (max-width: 515px) {
   img {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
   }
   main div ul li {
     height: 100px;
@@ -231,9 +236,9 @@ section div p {
   }
 }
 @media (max-width: 402px) {
-  img {
-    width: 55px;
-    height: 55px;
+  main div ul li div img {
+    height: 60px;
+    width: 60px;
   }
   main div ul li {
     height: 75px;
